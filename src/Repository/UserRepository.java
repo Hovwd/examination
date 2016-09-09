@@ -2,20 +2,35 @@ package Repository;
 
 import bean.User;
 
-public class UserRepository {
+public class UserRepository implements UserRepositoryInterface {
 	static UserRepository userRepository ;
 	public static UserRepository getInstance()
 	{
 		if(userRepository==null)
 		{
-			return new UserRepository();
+			userRepository = new UserRepository();
 		}
 		return userRepository;
 		}
-	User getUser(String name)throws Exception
-	{
-		return null;	
+	@Override
+	public User getUser(String Name) {
+		// TODO Auto-generated method stub
+		return null;
 	}
-	void addUser(){}
-	void DeletUser(){}
+	@Override
+	public boolean editUser() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	@Override
+	public void deletUser(String Name) {
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void addUser(String name, String password) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

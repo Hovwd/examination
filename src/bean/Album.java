@@ -1,9 +1,17 @@
 package bean;
+import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 public class Album {
 private String name;
 private String authorName;
 private List<Music> albumMusics;
+public Album(String name,String authorName)
+{
+	this.name=name;
+	this.authorName=authorName;
+	albumMusics=new ArrayList<Music>();
+	}
 
 public int getMusicCount() {
 	return albumMusics.size();
@@ -29,10 +37,8 @@ public List<Music> getAlbum()
 {
 	return albumMusics;
 	}
-public boolean deleteMusic(String name)
-{
-	return false;
-	
-	}
+public int musicsCount(){
+	return this.albumMusics.size();
+}
 
 }
