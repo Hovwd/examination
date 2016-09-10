@@ -1,8 +1,9 @@
 package Controler;
 
-import bean.User;
+import Model.User;
 
 public class Controler {
+	
 	private User onlineUser;
 private static Controler controler;
 private Controler()

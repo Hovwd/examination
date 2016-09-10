@@ -1,11 +1,13 @@
-package Repository;
+package User;
 
-import bean.User;
+
+import Model.User;
+import Util.NoExistException;
 
 public interface UserRepositoryInterface {
-public User getUser(String Name);
-public boolean editUser();
-public void deletUser(String Name);
-public void addUser(String name,String password);
+public User getUser(long id) throws NoExistException;
+public boolean editUser(long id) throws NoExistException;
+public boolean deletUser(String Name) throws NoExistException;
+public boolean addUser(String name,String password);
 
 }

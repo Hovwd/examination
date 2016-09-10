@@ -1,7 +1,7 @@
-package Repository;
+package Album;
 
-import Exception.NoExistException;
-import bean.Album;
+import Model.Album;
+import Util.NoExistException;
 
 public class AlbumRepository implements AlbomRepositoryInterface{
 	static AlbumRepository albums;

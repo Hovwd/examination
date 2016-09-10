@@ -1,7 +1,8 @@
-package Repository;
-import Exception.NoExistException;
-import bean.Album;
-import bean.Music;
+package Music;
+
+import Model.Album;
+import Model.Music;
+import Util.NoExistException;
 public class MusicRepository implements MusicRepositoryInterface{
 	private MusicRepository(){}
 	static MusicRepository musics;

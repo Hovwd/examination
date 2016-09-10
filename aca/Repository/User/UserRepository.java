@@ -1,6 +1,6 @@
-package Repository;
+package User;
 
-import bean.User;
+import Model.User;
 
 public class UserRepository implements UserRepositoryInterface {
 	static UserRepository userRepository ;

@@ -1,11 +1,18 @@
-package bean;
+package Model;
+
+import Util.IdGenerator;
 
 public class Music {
 private String songName;
 private double duraction;
 private String author;
 private boolean isPlay;
-private MusColection playList;
+private long id;
+public Music()
+{
+	id=IdGenerator.getId();
+	
+	}
 public String getSongName() {
 	return songName;
 }
